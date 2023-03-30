@@ -31,11 +31,7 @@ header{
     z-index: 10;
 }
 
-.logojv{
-    height: 100%;
-    padding: 20px;
-    position: absolute;
-}
+
 
 nav {
     float: right;
@@ -44,9 +40,6 @@ nav {
   	align-items: center; */
 }
 
-.navList{
-    height: 3rem;
-}
 
 nav li{
     display: inline-block;

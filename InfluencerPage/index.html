@@ -10,6 +10,11 @@
 
     <link rel="shortcut icon" href="img/icons8-gunter-16.png">
 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300&family=Raleway:wght@300&display=swap"   rel="stylesheet">
@@ -22,18 +27,17 @@
 <script src="script.js"></script>
 
 <body>
-    <header>
-        <nav>
+    <header class="w-100 h-70px -9 -282231 position-fixed">
+        <nav class="float-end">
             <!-- <div class="topnav" id="myTopnav"> -->
                 <ul class="topnav" id="myTopnav">
-
-                    <li>
+                    <li class="d-inline-block -020px h-30px">
                         <a href="#fotos">Mis Fotos</a>
                     </li>
-                    <li>
+                    <li class="d-inline-block -020px h-30px">
                         <a href="#contact">Contacto</a>
                     </li>
-                    <li>
+                    <li class="d-inline-block -020px h-30px">
                         <a href="javascript:void(0);" class="iconMenu" onclick="menuResponsive()">
                             <i class="fa fa-bars"></i>
                         </a>
@@ -43,35 +47,34 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="home">
-            <h1 class="tituloPresentacion">Soy Carolina, Tu Influecer de Confianza</h1>
-            <div class="contenidoHome">
-                
-            </div>
+        <section id="home" class="home w-100 h-500px position-relative">
+            <h1 class="tituloPresentacion position-absolute top-50 fs-50px fw-900 -0000 -180635">Soy Carolina, Tu Influecer de Confianza</h1>
         </section>
 
-        <section id="fotos" class="fotos">
+        <section id="fotos" class="fotos -1rem text-center">
             <h2 class="tituloPrincipal">Mis Fotos</h2>
-            <div class="contenidoFotos">
-                <img class="imgFotos" src="img/playa.jpg" alt="playa">
-                <img class="imgFotos" src="img/musica-electronica.jpg" alt="concierto">
-                <img class="imgFotos" src="img/matrimonio.jpg" alt="matrimonio">
+            <div class=" align-items-center d-flex flex-wrap justify-content-center">
+                <img class="imgFotos h-15rem -1rem" src="img/playa.jpg" alt="playa">
+                <img class="imgFotos h-15rem -1rem" src="img/musica-electronica.jpg" alt="concierto">
+                <img class="imgFotos h-15rem -1rem" src="img/matrimonio.jpg" alt="matrimonio">
             </div>
 
         </section>
 
-        <section id="contact" class="contact">
+        <section id="contact" class="contact -1rem">
             <h2 class="tituloPrincipal">Contactame</h2>
             
             <form name="formularioContacto" action="https://formsubmit.co/julianvargastrb@gmail.com" method="POST" netlify>
                 <label for="nombre">Tu Nombre</label>
-                <input class="inputContacto" type="text" name="text" id="nombre" required>
+                <input 
+                class="inputContacto d-block -10px w-100 -1pxsolid797979 -nconsolatamonospace -penanssans-serif -oppinssans-serif -alewaysans-serif fs-105rem" type="text" name="text" id="nombre" required
+                >
 
                 <label for="correo">Tu Email</label>
-                <input class="inputContacto" type="email" name="email" id="correo" placeholder="email@domain.com" required>
+                <input class="inputContacto d-block -10px w-100 -1pxsolid797979 -nconsolatamonospace -penanssans-serif -oppinssans-serif -alewaysans-serif fs-105rem" type="email" name="email" id="correo" placeholder="email@domain.com" required>
                 
                 <label for="mensaje">Y Escribeme ;D</label>
-                <textarea class="inputContacto" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+                <textarea class="inputContacto d-block -10px w-100 -1pxsolid797979 -nconsolatamonospace -penanssans-serif -oppinssans-serif -alewaysans-serif fs-105rem" name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
 
                 <input id="enviarCorreo" type="submit" value="¡Enviar!" class="enviar">
             </form>
